@@ -1,0 +1,268 @@
+/*Font global*/
+body {
+    font-family: 'Roboto', sans-serif !important;
+    background-color: #707070;
+}
+
+.opacidad {
+    opacity: 0.9;
+}
+
+.color {
+    color: #707070;
+}
+
+.icons-nav {
+    color: #707070;
+    font-size: 22px;
+}
+
+.font-portada {
+    font-size: 35px !important;
+    font-weight: 700 !important;
+    text-transform: none !important;
+    /*Agregar sombras a las letras con opacidad*/
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.font-medium-portada {
+    font-size: 25px !important;
+    font-weight: 300 !important;
+    text-transform: none !important;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.img-portada {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-size: cover
+}
+
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: #707070
+        /*linear-gradient(263deg, rgba(252, 74, 74, 1) 0%, rgba(0, 212, 255, 1) 100%);*/
+}
+
+.navbar-nav .nav-item a {
+    color: #707070;
+    font-weight: 700 !important;
+
+}
+
+.navbar-nav .nav-item .active {
+    color: #BF3939;
+}
+
+/* Carrusel */
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+
+
+.carousel-caption a {
+    color: #59291E !important;
+    font-weight: 500 !important;
+}
+
+.carousel-caption a {
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #000;
+    margin-top: 15px;
+}
+
+
+#redes-nav {
+    /*Que si se mire */
+    display: none !important;
+}
+
+.carrito span {
+    color: #F2A7A7;
+    font-size: 13px;
+    font-weight: bold;
+    /*colocarlo encima del carrito y a la derecha*/
+    position: absolute;
+    top: 12px;
+    right: 57px;
+
+
+}
+
+.posicion {
+    position: absolute;
+    top: 90px;
+    right: 0px;
+}
+
+.anuncio {
+    background-color: #F2A7A7;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    padding: 8px 5px;
+    border-radius: 0px 8px 8px 0px;
+    z-index: 99;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    /*dar espaciado a las letras*/
+    letter-spacing: 4px;
+    /*que se vea en todos los navegadores*/
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    /*que no se pueda seleccionar*/
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    /*quitar las decoraciones del boton*/
+    border: none;
+}
+
+.anuncio :hover {
+    cursor: pointer;
+}
+
+.fa-caret-right {
+    font-size: 20px;
+    border-radius: none;
+}
+
+#ofertas2 {
+    display: none;
+    z-index: 99;
+    background-color: #fff;
+    width: 25%;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+    #redes-nav {
+        /*Que si se mire */
+        display: block !important;
+        /*centrar*/
+        margin: 0 auto;
+    }
+
+    .redes-sociales {
+        display: none;
+    }
+
+    .font-medium-portada {
+        font-size: 15px !important;
+
+    }
+
+    .font-portada {
+        font-size: 25px !important;
+
+    }
+
+    .carousel-caption {
+        bottom: 100px !important;
+    }
+
+    .carousel-caption {
+        bottom: 165px !important;
+    }
+
+}
